@@ -7,6 +7,7 @@
 //
 
 #import "DORootVC.h"
+#import "DOCustomObject.h"
 
 @interface DORootVC ()
 
@@ -19,6 +20,10 @@
     
     self.title = @"消息转发机制";
     self.view.backgroundColor = [UIColor redColor];
+    
+    /**因为customMethod对象方法没有实现，正常会报经典错误：[DOCustomObject customMethod]: unrecognized selector sent to instance 0x60000001ddd0 */
+    DOCustomObject *custom_object = [[DOCustomObject alloc] init];
+    [custom_object performSelector:@selector(customMethod) withObject:@"你猜我是谁？"];
 }
 
 @end

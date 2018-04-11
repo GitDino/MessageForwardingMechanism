@@ -14,6 +14,8 @@
 		016EB3E5207E51E500AAC25B /* MessageForwardingDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB3E4207E51E500AAC25B /* MessageForwardingDemoTests.m */; };
 		016EB3F0207E51E500AAC25B /* MessageForwardingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB3EF207E51E500AAC25B /* MessageForwardingDemoUITests.m */; };
 		016EB402207E522800AAC25B /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB401207E522800AAC25B /* DORootVC.m */; };
+		016EB406207E534400AAC25B /* DOCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB405207E534400AAC25B /* DOCustomObject.m */; };
+		016EB409207E5EAC00AAC25B /* DOAnotherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 016EB408207E5EAC00AAC25B /* DOAnotherObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		016EB3F1207E51E500AAC25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016EB400207E522800AAC25B /* DORootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORootVC.h; sourceTree = "<group>"; };
 		016EB401207E522800AAC25B /* DORootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORootVC.m; sourceTree = "<group>"; };
+		016EB404207E534400AAC25B /* DOCustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOCustomObject.h; sourceTree = "<group>"; };
+		016EB405207E534400AAC25B /* DOCustomObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOCustomObject.m; sourceTree = "<group>"; };
+		016EB407207E5EAC00AAC25B /* DOAnotherObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOAnotherObject.h; sourceTree = "<group>"; };
+		016EB408207E5EAC00AAC25B /* DOAnotherObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOAnotherObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		016EB3CA207E51E400AAC25B /* MessageForwardingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				016EB403207E532500AAC25B /* Model */,
 				016EB3FF207E51FA00AAC25B /* Controller */,
 				016EB3FE207E51F300AAC25B /* Bases */,
 				016EB3FD207E51EC00AAC25B /* Resources */,
@@ -151,6 +158,17 @@
 				016EB401207E522800AAC25B /* DORootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		016EB403207E532500AAC25B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				016EB404207E534400AAC25B /* DOCustomObject.h */,
+				016EB405207E534400AAC25B /* DOCustomObject.m */,
+				016EB407207E5EAC00AAC25B /* DOAnotherObject.h */,
+				016EB408207E5EAC00AAC25B /* DOAnotherObject.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016EB406207E534400AAC25B /* DOCustomObject.m in Sources */,
 				016EB402207E522800AAC25B /* DORootVC.m in Sources */,
 				016EB3DB207E51E500AAC25B /* main.m in Sources */,
 				016EB3CD207E51E400AAC25B /* AppDelegate.m in Sources */,
+				016EB409207E5EAC00AAC25B /* DOAnotherObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
